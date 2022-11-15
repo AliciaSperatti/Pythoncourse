@@ -61,9 +61,9 @@ dcc.RangeSlider(id='payload-slider',
                 marks={0: '0',
                        100: '100'},
                 value=[min_payload, max_payload])
-                                # TASK 4: Add a scatter chart to show the correlation between payload and launch success
-                                html.Div(dcc.Graph(id='success-payload-scatter-chart')),
-                                ])
+                           
+html.Div(dcc.Graph(id='success-payload-scatter-chart')),
+])
 
 # TASK 4:
 # Add a callback function for `site-dropdown` and `payload-slider` as inputs, `success-payload-scatter-chart` as output
